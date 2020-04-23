@@ -1,0 +1,1 @@
+Thu, 23 Apr 2020 09:11:40-test_case.test_login-test_login.py-[line:35]-INFO-[日志信息]: statusCode返回正确------》 2

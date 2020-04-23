@@ -1,0 +1,1 @@
+INFO     test_case.test_12306_find:test_12306_find.py:33 statusCode返回正确------》 200

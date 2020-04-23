@@ -1,0 +1,2 @@
+Thu, 23 Apr 2020 10:57:20-test_case.test_login-test_login.py-[line:35]-INFO-[日志信息]: statusCode返回正确------》 2
+Thu, 23 Apr 2020 10:57:20-test_case.test_login_getVar-test_login_getVar.py-[line:60]-INFO-[日志信息]: statusCode返回正确------》 0

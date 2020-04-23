@@ -1,0 +1,67 @@
+{
+  "uid" : "2853980c5c6c2de8",
+  "name" : "test_login",
+  "fullName" : "test_case.test_login#test_login",
+  "historyId" : "0e4440da7367d665f196993fa35badd6",
+  "time" : {
+    "start" : 1587432579142,
+    "stop" : 1587432581187,
+    "duration" : 2045
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "49ab7426f24aeb36",
+      "name" : "stdout",
+      "source" : "49ab7426f24aeb36.txt",
+      "type" : "text/plain",
+      "size" : 2
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DannydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "23084-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2853980c5c6c2de8.json",
+  "parameterValues" : [ ]
+}

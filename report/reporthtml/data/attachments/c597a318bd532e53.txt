@@ -1,0 +1,1 @@
+INFO     test_case.test_login:test_login.py:62 statusCode返回正确，用户名错误无法登录逻辑正确------》 0

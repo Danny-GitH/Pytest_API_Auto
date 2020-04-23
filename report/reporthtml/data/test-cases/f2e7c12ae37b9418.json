@@ -1,0 +1,89 @@
+{
+  "uid" : "f2e7c12ae37b9418",
+  "name" : "test_login_pass",
+  "fullName" : "test_case.test_login_getVar#test_login_pass",
+  "historyId" : "4f6fd6dbc52ec2461fa9b35fbb82bb0e",
+  "time" : {
+    "start" : 1587613335454,
+    "stop" : 1587613337997,
+    "duration" : 2543
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c15ebf4cee30f02e",
+      "name" : "log",
+      "source" : "c15ebf4cee30f02e.txt",
+      "type" : "text/plain",
+      "size" : 80
+    }, {
+      "uid" : "72605ddedea443a2",
+      "name" : "stdout",
+      "source" : "72605ddedea443a2.txt",
+      "type" : "text/plain",
+      "size" : 2
+    }, {
+      "uid" : "65df4746036737b6",
+      "name" : "stderr",
+      "source" : "65df4746036737b6.txt",
+      "type" : "text/plain",
+      "size" : 126
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_getVar"
+  }, {
+    "name" : "host",
+    "value" : "DannydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "943-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login_getVar"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "27ef3c29e008b712",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587610629921,
+        "stop" : 1587610632075,
+        "duration" : 2154
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f2e7c12ae37b9418.json",
+  "parameterValues" : [ ]
+}

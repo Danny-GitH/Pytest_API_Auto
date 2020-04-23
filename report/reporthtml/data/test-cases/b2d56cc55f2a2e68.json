@@ -1,0 +1,71 @@
+{
+  "uid" : "b2d56cc55f2a2e68",
+  "name" : "test_find12306_care",
+  "fullName" : "test_case.test_12306_find#test_find12306_care",
+  "historyId" : "b16bed638363ff67d9ef43c70cdb3ff0",
+  "time" : {
+    "start" : 1587604445085,
+    "stop" : 1587604445871,
+    "duration" : 786
+  },
+  "status" : "broken",
+  "statusMessage" : "simplejson.errors.JSONDecodeError: Expecting value: line 1 column 4 (char 3)",
+  "statusTrace" : "def test_find12306_care():\n        find_url = \"https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2020-04-16&leftTicketDTO.from_station=SHH&leftTicketDTO.to_station=BJP&purpose_codes=ADULT\"\n        headers = {\n            'Cookie': 'JSESSIONID=4F03C7E753ECE59BCB37F97863AC6CCA; RAIL_EXPIRATION=1587303802989; RAIL_DEVICEID=hMm3v8WcMuj2k-b3xmmJFWDldr0Yca6SmMx6F8FAB7ulGxqZWR5K6eO9LB-FkfiroNn0O7bl5eZrCcxqzJje8DI_-hY3Ij0wT70YI5y9teFMG8fuMleCoFFYmXaVU7YShsZHOWpTEIywWWN9wUtEd4vJpxdnpjRn; BIGipServerpassport=921174282.50215.0000; route=9036359bb8a8a461c164a04f8f50b252; BIGipServerotn=1072693770.24610.0000; _jc_save_fromStation=%u4E0A%u6D77%2CSHH; _jc_save_toStation=%u5317%u4EAC%2CBJP; _jc_save_fromDate=2020-04-16; _jc_save_toDate=2020-04-16; _jc_save_wfdc_flag=dc'\n        }\n        r = RequestsHandler().post_Req(url=find_url, headers=headers)\n        print(r.text.encode('utf-8').decode('unicode_escape'))\n>       statusCode = r.json()['httpstatus']\n\n../test_case/test_12306_find.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/requests/models.py:897: in json\n    return complexjson.loads(self.text, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/__init__.py:525: in loads\n    return _default_decoder.decode(s)\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/decoder.py:370: in decode\n    obj, end = self.raw_decode(s)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <simplejson.decoder.JSONDecoder object at 0x109ca4340>\ns = 'ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitiona...          \\r\\n                         </li>\\r\\n\\r\\n                         </ul>\\r\\n\\r\\n</div>\\r\\n</body>\\r\\n</html>'\nidx = 3, _w = <built-in method match of re.Pattern object at 0x1091d5e70>\n_PY3 = True\n\n    def raw_decode(self, s, idx=0, _w=WHITESPACE.match, _PY3=PY3):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` or ``unicode``\n        beginning with a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n        Optionally, ``idx`` can be used to specify an offset in ``s`` where\n        the JSON document begins.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        if idx < 0:\n            # Ensure that raw_decode bails on negative indexes, the regex\n            # would otherwise mask this behavior. #98\n            raise JSONDecodeError('Expecting value', s, idx)\n        if _PY3 and not isinstance(s, str):\n            raise TypeError(\"Input string must be text, not bytes\")\n        # strip UTF-8 bom\n        if len(s) > idx:\n            ord0 = ord(s[idx])\n            if ord0 == 0xfeff:\n                idx += 1\n            elif ord0 == 0xef and s[idx:idx + 3] == '\\xef\\xbb\\xbf':\n                idx += 3\n>       return self.scan_once(s, idx=_w(s, idx).end())\nE       simplejson.errors.JSONDecodeError: Expecting value: line 1 column 4 (char 3)\n\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/decoder.py:400: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "simplejson.errors.JSONDecodeError: Expecting value: line 1 column 4 (char 3)",
+    "statusTrace" : "def test_find12306_care():\n        find_url = \"https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2020-04-16&leftTicketDTO.from_station=SHH&leftTicketDTO.to_station=BJP&purpose_codes=ADULT\"\n        headers = {\n            'Cookie': 'JSESSIONID=4F03C7E753ECE59BCB37F97863AC6CCA; RAIL_EXPIRATION=1587303802989; RAIL_DEVICEID=hMm3v8WcMuj2k-b3xmmJFWDldr0Yca6SmMx6F8FAB7ulGxqZWR5K6eO9LB-FkfiroNn0O7bl5eZrCcxqzJje8DI_-hY3Ij0wT70YI5y9teFMG8fuMleCoFFYmXaVU7YShsZHOWpTEIywWWN9wUtEd4vJpxdnpjRn; BIGipServerpassport=921174282.50215.0000; route=9036359bb8a8a461c164a04f8f50b252; BIGipServerotn=1072693770.24610.0000; _jc_save_fromStation=%u4E0A%u6D77%2CSHH; _jc_save_toStation=%u5317%u4EAC%2CBJP; _jc_save_fromDate=2020-04-16; _jc_save_toDate=2020-04-16; _jc_save_wfdc_flag=dc'\n        }\n        r = RequestsHandler().post_Req(url=find_url, headers=headers)\n        print(r.text.encode('utf-8').decode('unicode_escape'))\n>       statusCode = r.json()['httpstatus']\n\n../test_case/test_12306_find.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/requests/models.py:897: in json\n    return complexjson.loads(self.text, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/__init__.py:525: in loads\n    return _default_decoder.decode(s)\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/decoder.py:370: in decode\n    obj, end = self.raw_decode(s)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <simplejson.decoder.JSONDecoder object at 0x109ca4340>\ns = 'ï»¿<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitiona...          \\r\\n                         </li>\\r\\n\\r\\n                         </ul>\\r\\n\\r\\n</div>\\r\\n</body>\\r\\n</html>'\nidx = 3, _w = <built-in method match of re.Pattern object at 0x1091d5e70>\n_PY3 = True\n\n    def raw_decode(self, s, idx=0, _w=WHITESPACE.match, _PY3=PY3):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` or ``unicode``\n        beginning with a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n        Optionally, ``idx`` can be used to specify an offset in ``s`` where\n        the JSON document begins.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        if idx < 0:\n            # Ensure that raw_decode bails on negative indexes, the regex\n            # would otherwise mask this behavior. #98\n            raise JSONDecodeError('Expecting value', s, idx)\n        if _PY3 and not isinstance(s, str):\n            raise TypeError(\"Input string must be text, not bytes\")\n        # strip UTF-8 bom\n        if len(s) > idx:\n            ord0 = ord(s[idx])\n            if ord0 == 0xfeff:\n                idx += 1\n            elif ord0 == 0xef and s[idx:idx + 3] == '\\xef\\xbb\\xbf':\n                idx += 3\n>       return self.scan_once(s, idx=_w(s, idx).end())\nE       simplejson.errors.JSONDecodeError: Expecting value: line 1 column 4 (char 3)\n\n/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/simplejson/decoder.py:400: JSONDecodeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "489c1e251f6d83b4",
+      "name" : "stdout",
+      "source" : "489c1e251f6d83b4.txt",
+      "type" : "text/plain",
+      "size" : 2664
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_12306_find"
+  }, {
+    "name" : "host",
+    "value" : "DannydeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "27975-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_12306_find"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2d56cc55f2a2e68.json",
+  "parameterValues" : [ ]
+}
