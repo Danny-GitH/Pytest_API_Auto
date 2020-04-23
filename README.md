@@ -1,0 +1,2 @@
+# Pytest_API_Auto
+基于Pytest搭建一个自动化框架，以日志和allure的方式分析
