@@ -1,0 +1,22 @@
+test_login_pass:
+  url: "/fanwe/index.php?ctl=user&act=dologin&fhash=IzHHyOyDiNsiYYYbamPlHqPQuWrWsCPGUKafBrbgqEymWQcfUP"
+  params: {
+            "email": "admin",
+            "user_pwd": "VElqV0Jlb0dpWUZ4aVVMcE5VaEpYc21pTUJ5dERWa3dEUFRYdmp4Y01vaXhxcVd1U0slMjV1NjVCOSUyNXU3RUY0YWRtaW4lMjV1OEY2RiUyNXU0RUY2",
+            "ajax": 1,
+            "auto_login": 1
+
+  }
+  paramsErrorUsername: {
+                         "email": "ad",
+                         "user_pwd": "admin",
+                         "ajax": 1,
+                         "auto_login": 1
+  }
+  paramsErrorPassword: {
+
+                         "email": "admin",
+                         "user_pwd": "ad",
+                         "ajax": 1,
+                         "auto_login": 1
+  }
