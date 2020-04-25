@@ -40,7 +40,7 @@ class SendMail:
         toclause = receivers.split(',')
         msg['To'] = ",".join(toclause)
         username = '15656550098@163.com'
-        password = 'EOICJHECUERXCMTN'
+        password = '@@@@@@@@@@@@'
         # msg.attach(mail_body)
 
         msg.attach(mail_body2)
@@ -60,7 +60,7 @@ def email():
     # 第三方 SMTP 服务
     mail_host = "smtp.163.com"  # 设置服务器
     mail_user = "15656550098@163.com"  # 用户名
-    mail_pass = "e299Bb738E38a4e8"  # 口令
+    mail_pass = "@@@@@@@@@"  # 口令
 
     sender = '15656550098@163.com'
     receivers = 'babyyuzhu@163.com'  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
