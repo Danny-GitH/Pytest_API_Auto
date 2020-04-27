@@ -1,2 +1,0 @@
-{"validateMessagesShowId":"_validatorMessage","status":true,"httpstatus":200,"data":{"message":"目前暂无G7259次列车上海站到达时间，请稍候重新查询","flag":false},"messages":[],"validateMessages":{}}
-200

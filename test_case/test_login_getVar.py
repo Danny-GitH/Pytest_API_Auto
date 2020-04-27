@@ -38,25 +38,25 @@ def test_add_address():
     :return:
     """
 
-    c_url = server_ip('test') + "/fanwe/member.php?ctl=uc_consignee&act=save_consignee&fhash" \
-                          "=DfsDPnOFzIZCURleTaOwpmXeuAKjPhZikHsEKFLuglJdUkQCni "
-
-    data = {
-        "consignee": "dr",
-        "address": "drdrdr",
-        "mobile": "13212345678",
-        "ajax": 1,
-        "id": ""
-    }
+    c_url = server_ip('test') + yamldict['test_add_address']["url"]
+    #
+    # data = {
+    #     "consignee": "dr",
+    #     "address": "drdrdr",
+    #     "mobile": "13212345678",
+    #     "ajax": 1,
+    #     "id": ""
+    # }
     re_login_cookie = test_login_pass()
-    r_a = requests.post(url=c_url, data=data, cookies=re_login_cookie)
+    r_a = requests.post(url=c_url, data=yamldict['test_add_address']["data"], cookies=re_login_cookie)
     content = r_a.text.encode('utf-8').decode('unicode_escape')
     content = json.loads(content)
+    logger.info("接口返回内容-----》 %s", content)
     statusCode = content["status"]
     print(statusCode)
 
     try:
-        assert statusCode == 0, "添加地址失败！"
+        assert statusCode == 1, "添加地址失败！"
         logger.info("statusCode返回正确------》 %s", statusCode)
 
     except Exception:

@@ -1,3 +1,4 @@
+# 脚本 test_login_pass
 test_login_pass:
   url: "/fanwe/index.php?ctl=user&act=dologin&fhash=IzHHyOyDiNsiYYYbamPlHqPQuWrWsCPGUKafBrbgqEymWQcfUP"
   params: {
@@ -19,4 +20,29 @@ test_login_pass:
                          "user_pwd": "ad",
                          "ajax": 1,
                          "auto_login": 1
+  }
+
+# 脚本 test_find12306_care
+test_find12306_care:
+  url: "https://kyfw.12306.cn/otn/zwdch/query"
+  headers: {
+            "Cookie": 'JSESSIONID=850EFF3FBF945C2FF718D3776878B911; _jc_save_wfdc_flag=dc; RAIL_EXPIRATION=1587919712423; RAIL_DEVICEID=NYtRP-RiCnLvqmSmBYUrwuQRr1hZfVP2VEE3f61RtTcpL1rPV0yti0WYqPf3oGO5r6ECBOs2kWbK2_hIyhaC_DeXp4BCK_180GxJHeWxrF5l1KbHrX4mkosSfmRyekcRGnv2FxodRhrTCOe2ayau3uqJvNZP4k0W; BIGipServerpool_passport=200081930.50215.0000; route=6f50b51faa11b987e576cdb301e545c4; _jc_save_toDate=2020-04-23; _jc_save_fromDate=2020-05-22; _jc_save_fromStation=%u4E0A%u6D77%2CSHH; _jc_save_toStation=%u5317%u4EAC%2CBJP; BIGipServerotn=2246574346.24610.0000; _jc_save_zwdch_fromStation=%u4E0A%u6D77%2CSHH; _jc_save_zwdch_cxlx=0'
+  }
+  data: {
+          "cxlx": 0,
+          "cz": "上海",
+          "cc": "G7259",
+          "czEn": '-E4-B8-8A-E6-B5-B7',
+          "randCode": ''
+  }
+
+# 脚本test_add_address
+test_add_address:
+  url: "/fanwe/member.php?ctl=uc_consignee&act=save_consignee&fhash=DfsDPnOFzIZCURleTaOwpmXeuAKjPhZikHsEKFLuglJdUkQCni"
+  data: {
+          "consignee": "dr",
+          "address": "drdrdr",
+          "mobile": "13212345678",
+          "ajax": 1,
+          "id": ""
   }

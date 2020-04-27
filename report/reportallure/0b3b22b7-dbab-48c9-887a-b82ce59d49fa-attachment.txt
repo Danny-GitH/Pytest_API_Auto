@@ -1,1 +1,0 @@
-Thu, 23 Apr 2020 11:42:23-test_case.test_login-test_login.py-[line:89]-INFO-[日志信息]: statusCode返回正确，密码错误无法登录逻辑正确------》 0

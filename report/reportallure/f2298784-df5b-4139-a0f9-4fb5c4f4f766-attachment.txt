@@ -1,2 +1,0 @@
-{"validateMessagesShowId":"_validatorMessage","status":true,"httpstatus":200,"data":{"message":"预计G7259次列车，上海站到达时间为10:08","flag":false},"messages":[],"validateMessages":{}}
-200

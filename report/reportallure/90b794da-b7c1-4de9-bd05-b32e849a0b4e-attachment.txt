@@ -1,2 +1,0 @@
-INFO     test_case.test_login:test_login.py:35 statusCode返回正确------》 2
-INFO     test_case.test_login_getVar:test_login_getVar.py:60 statusCode返回正确------》 0

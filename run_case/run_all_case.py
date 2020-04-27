@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # pytest.main(['../test_case', '--html=../report/report.html'])
     logger.info("开始执行脚本")
     try:
-        pytest.main(['../test_case', '--alluredir', '../report/reportallure'])
+        pytest.main(['../test_case/', '--alluredir', '../report/reportallure'])
         logger.info("脚本执行完成")
     except Exception:
         logger.error("脚本批量执行失败！")

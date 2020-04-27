@@ -1,1 +1,0 @@
-Thu, 23 Apr 2020 11:42:08-test_case.test_12306_find-test_12306_find.py-[line:33]-INFO-[日志信息]: statusCode返回正确------》 200

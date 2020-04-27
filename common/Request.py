@@ -40,7 +40,7 @@ class RequestsHandler:
 
     # vist方法是整合接口请求的方法
     def vist_Req(self, method, url, params=None, data=None, json=None, **kw):
-        '''访问接口'''
+        """访问接口"""
         'GET,如果传输进来的是大写的GET。可以使用lower方法'
         if method.lower == 'get':
             return self.get_Req(url, params=params, **kw)
@@ -52,7 +52,7 @@ class RequestsHandler:
             return requests.request(method, url, **kw)
 
     def json(self, method, url, params=None, data=None, json=None, **kw):  # json是要再vist方法下去进行进一步的处理
-        '''访问接口，获取json数据'''
+        """访问接口，获取json数据"""
         res = self.vist_Req(url, method, params=params, data=data, json=json, **kw)
         # 获取json数据
         try:
@@ -60,10 +60,3 @@ class RequestsHandler:
         except:
             # 记录日志信息
             logging.error('不是json格式的数据')
-
-
-
-
-
-
-

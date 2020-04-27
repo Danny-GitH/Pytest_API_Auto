@@ -1,1 +1,0 @@
-INFO     test_case.test_login:test_login.py:35 statusCode返回正确------》 2
